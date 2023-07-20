@@ -1,5 +1,6 @@
 add_library(spelling_bee_lib
-        lib/trie.cpp lib/trie.h)
+        lib/trie.cpp lib/trie.h
+        lib/wordvalidator.cpp lib/wordvalidator.h)
 
 target_link_libraries(spelling_bee_lib
         Qt5::Core)

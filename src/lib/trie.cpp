@@ -29,7 +29,7 @@ void lib::Trie::addWord(const QString &word)
  * @param word
  * @return whether word is in trie
  */
-bool lib::Trie::containsWord(const QString &word) const
+bool lib::Trie::contains(const QString &word) const
 {
     const TrieNode *curr = &m_root;
     for (const auto &c : word)

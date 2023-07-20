@@ -6,6 +6,7 @@
 
 namespace lib
 {
+
 class Trie : public QObject
 {
     Q_OBJECT
@@ -14,7 +15,7 @@ class Trie : public QObject
     ~Trie() override = default;
 
     void addWord(const QString &word);
-    [[nodiscard]] bool containsWord(const QString &word) const;
+    [[nodiscard]] bool contains(const QString &word) const;
 
   private:
     struct TrieNode
@@ -26,6 +27,7 @@ class Trie : public QObject
 
     TrieNode m_root;
 };
+
 } // namespace lib
 
 #endif // SPELLING_BEE_QT_TRIE_H

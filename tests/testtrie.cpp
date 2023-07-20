@@ -5,9 +5,9 @@
 void TestTrie::addAndContains()
 {
     lib::Trie trie;
-    QVERIFY(trie.containsWord("fire") == false);
+    QVERIFY(trie.contains("fire") == false);
     trie.addWord("fire");
-    QVERIFY(trie.containsWord("fire") == true);
+    QVERIFY(trie.contains("fire") == true);
 }
 
 QTEST_MAIN(TestTrie)
