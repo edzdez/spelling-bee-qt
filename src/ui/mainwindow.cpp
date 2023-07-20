@@ -6,11 +6,17 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , m_wordlist()
 {
     ui->setupUi(this);
+    readWordlist();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::readWordlist()
+{
 }
