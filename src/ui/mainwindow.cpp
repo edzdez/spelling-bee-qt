@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->l6->setStyleSheet("background-color: #FFFF00; color: #000000; border: none;");
 
     connect(m_manager, &QNetworkAccessManager::finished, this, &MainWindow::onRequestReply);
-    connect(ui->actionNew_Game, &QAction::triggered, this, &MainWindow::onNewGameClicked);
+    connect(ui->actionNew, &QAction::triggered, this, &MainWindow::onNewGameClicked);
     connect(this, &MainWindow::gameLoaded, this, &MainWindow::onGameLoad);
     connect(this, &MainWindow::pointsEarned, this, &MainWindow::onPointsEarned);
     connect(this, &MainWindow::resetUi, this, &MainWindow::onResetUi);
