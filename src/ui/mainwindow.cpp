@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , m_manager(new QNetworkAccessManager(this))
 {
     ui->setupUi(this);
-    ui->l6->setStyleSheet("background-color: yellow;");
+    ui->l6->setStyleSheet("background-color: #FFFF00; color: #000000; border: none;");
 
     connect(m_manager, &QNetworkAccessManager::finished, this, &MainWindow::onRequestReply);
     connect(ui->actionNew_Game, &QAction::triggered, this, &MainWindow::onNewGameClicked);
